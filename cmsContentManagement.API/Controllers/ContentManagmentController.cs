@@ -1,6 +1,6 @@
-using cmsContentManagment.Application.DTO;
-using cmsContentManagment.Application.Interfaces;
-using cmsContentManagment.Domain.Entities;
+using cmsContentManagement.Application.DTO;
+using cmsContentManagement.Application.Interfaces;
+using cmsContentManagement.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

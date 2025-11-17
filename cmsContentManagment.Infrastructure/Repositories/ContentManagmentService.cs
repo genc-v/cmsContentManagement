@@ -1,13 +1,13 @@
-using cmsContentManagment.Application.Common.ErrorCodes;
-using cmsContentManagment.Application.DTO;
-using cmsContentManagment.Application.Interfaces;
-using cmsContentManagment.Domain.Entities;
-using cmsContentManagment.Infrastructure.Persistance;
+using cmsContentManagement.Application.Common.ErrorCodes;
+using cmsContentManagement.Application.DTO;
+using cmsContentManagement.Application.Interfaces;
+using cmsContentManagement.Domain.Entities;
+using cmsContentManagement.Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.IdentityModel.Tokens;
 
-namespace cmsContentManagment.Infrastructure.Repositories;
+namespace cmsContentManagement.Infrastructure.Repositories;
 
 public class ContentManagmentService : IContentManagmentService
 {

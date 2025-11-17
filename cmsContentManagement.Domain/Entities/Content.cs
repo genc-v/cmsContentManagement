@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace cmsContentManagment.Domain.Entities;
+namespace cmsContentManagement.Domain.Entities;
 
 public class Content
 {

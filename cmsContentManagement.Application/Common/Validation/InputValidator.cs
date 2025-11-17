@@ -1,5 +1,5 @@
 using System.Text.RegularExpressions;
-using cmsContentManagment.Application.Common.ErrorCodes;
+using cmsContentManagement.Application.Common.ErrorCodes;
 
 namespace cmsUserManagment.Application.Common.Validation;
 

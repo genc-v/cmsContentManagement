@@ -1,7 +1,7 @@
-using cmsContentManagment.Application.Interfaces;
-using cmsContentManagment.Infrastructure.Persistance;
-using cmsContentManagment.Infrastructure.Repositories;
-using cmsContentManagment.Middleware;
+using cmsContentManagement.Application.Interfaces;
+using cmsContentManagement.Infrastructure.Persistance;
+using cmsContentManagement.Infrastructure.Repositories;
+using cmsContentManagement.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

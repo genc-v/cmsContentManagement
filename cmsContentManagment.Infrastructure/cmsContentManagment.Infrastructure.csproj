@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\cmsContentManagment.Application\cmsContentManagment.Application.csproj" />
-      <ProjectReference Include="..\cmsContentManagment.Domain\cmsContentManagment.Domain.csproj" />
+      <ProjectReference Include="..\cmsContentManagement.Application\cmsContentManagement.Application.csproj" />
+      <ProjectReference Include="..\cmsContentManagement.Domain\cmsContentManagement.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>

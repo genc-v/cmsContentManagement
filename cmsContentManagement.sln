@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagment.API", "cmsContentManagment.API\cmsContentManagment.API.csproj", "{F629CDB0-3BFC-451F-A9CC-F6D675EB3BCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagement.API", "cmsContentManagement.API\cmsContentManagement.API.csproj", "{F629CDB0-3BFC-451F-A9CC-F6D675EB3BCE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78D40D56-7083-4BEC-AC25-812F24E28250}"
 	ProjectSection(SolutionItems) = preProject
 		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagment.Domain", "cmsContentManagment.Domain\cmsContentManagment.Domain.csproj", "{9415D960-F00B-41C8-AD28-39F2767F8688}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagement.Domain", "cmsContentManagement.Domain\cmsContentManagement.Domain.csproj", "{9415D960-F00B-41C8-AD28-39F2767F8688}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagment.Infrastructure", "cmsContentManagment.Infrastructure\cmsContentManagment.Infrastructure.csproj", "{25E89CC4-1BB4-4915-9F86-5ADE5072821B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagment.Application", "cmsContentManagment.Application\cmsContentManagment.Application.csproj", "{A227CFD6-7C97-43EC-A969-8704D89E6C07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsContentManagement.Application", "cmsContentManagement.Application\cmsContentManagement.Application.csproj", "{A227CFD6-7C97-43EC-A969-8704D89E6C07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

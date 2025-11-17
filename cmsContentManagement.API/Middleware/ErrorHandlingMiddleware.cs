@@ -1,8 +1,8 @@
 using System.Net;
 using System.Text.Json;
-using cmsContentManagment.Application.Common.ErrorCodes;
+using cmsContentManagement.Application.Common.ErrorCodes;
 
-namespace cmsContentManagment.Middleware;
+namespace cmsContentManagement.Middleware;
 
 public class ErrorHandlingMiddleware
 {

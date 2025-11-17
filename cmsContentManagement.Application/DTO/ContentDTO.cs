@@ -1,4 +1,4 @@
-namespace cmsContentManagment.Application.DTO;
+namespace cmsContentManagement.Application.DTO;
 
 public class ContentDTO
 {

@@ -1,4 +1,4 @@
-namespace cmsContentManagment.Application.Common.ErrorCodes;
+namespace cmsContentManagement.Application.Common.ErrorCodes;
 
 public class AuthErrorCodes : Exception
 {

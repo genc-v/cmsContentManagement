@@ -1,7 +1,7 @@
-using cmsContentManagment.Application.DTO;
-using cmsContentManagment.Domain.Entities;
+using cmsContentManagement.Application.DTO;
+using cmsContentManagement.Domain.Entities;
 
-namespace cmsContentManagment.Application.Interfaces;
+namespace cmsContentManagement.Application.Interfaces;
 
 public interface IContentManagmentService
 {
