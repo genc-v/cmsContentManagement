@@ -1,7 +1,7 @@
 using cmsContentManagement.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace cmsContentManagement.Infrastructure.Persistance;
+namespace cmsContentManagment.Infrastructure.Persistance;
 
 public class AppDbContext : DbContext
 {

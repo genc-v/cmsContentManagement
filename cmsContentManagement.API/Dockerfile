@@ -6,20 +6,20 @@ WORKDIR /source
 # Copy solution and project files to leverage Docker layer caching.
 # This way, 'dotnet restore' is only re-run when project dependencies change.
 COPY *.sln .
-COPY cmsUserManagment.API/*.csproj ./cmsUserManagment.API/
-COPY cmsUserManagment.Application/*.csproj ./cmsUserManagment.Application/
-COPY cmsUserManagment.Infrastructure/*.csproj ./cmsUserManagment.Infrastructure/
-COPY cmsUserManagment.Domain/*.csproj ./cmsUserManagment.Domain/
+COPY cmsContentManagement.API/*.csproj ./cmsContentManagement.API/
+COPY cmsContentManagement.Application/*.csproj ./cmsContentManagement.Application/
+COPY cmsContentManagement.Infrastructure/*.csproj ./cmsContentManagement.Infrastructure/
+COPY cmsContentManagement.Domain/*.csproj ./cmsContentManagement.Domain/
 
 # Restore NuGet packages for the entire solution.
-RUN dotnet restore "./cmsUserManagment.sln"
+RUN dotnet restore "./cmsContentManagement.sln"
 
 # Copy the rest of the source code.
 COPY . .
 
 # Publish the application, creating a release-ready output.
 # The output is placed in the /app/publish directory.
-RUN dotnet publish "./cmsUserManagment.API/cmsUserManagment.API.csproj" -c Release -o /app/publish --no-restore
+RUN dotnet publish "./cmsContentManagement.API/cmsContentManagement.API.csproj" -c Release -o /app/publish --no-restore
 
 # Stage 2: Final Image
 # This stage creates the final, lightweight production image.
@@ -34,4 +34,4 @@ COPY --from=build /app/publish .
 EXPOSE 8080
 
 # Set the entry point to run the application.
-ENTRYPOINT ["dotnet", "cmsUserManagment.API.dll"]
+ENTRYPOINT ["dotnet", "cmsContentManagement.API.dll"]

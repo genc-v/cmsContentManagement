@@ -5,7 +5,7 @@ namespace cmsContentManagement.Domain.Entities;
 public class Content
 {
     [Key]
-    public Guid ContentId { get; }
+    public Guid ContentId { get; set; }
     [Url]
     public string? AssetUrl  { get; set; }
     public string? Title { get; set; }

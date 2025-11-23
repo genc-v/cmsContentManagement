@@ -25,18 +25,27 @@ public class ContentManagmentController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<List<Content>> GetAllContents(Guid userId)
+    public async Task<List<Content>> GetAllContents([FromQuery] Guid userId)
     {
         return await _contentManagmentService.getAllContents(userId);
+    }
+
+    [HttpGet("search")]
+    public async Task<IReadOnlyCollection<Content>> SearchContents(
+        [FromQuery] string? query,
+        [FromQuery] int size = 25
+    )
+    {
+        return await _contentManagmentService.SearchContents(query, size);
     }
 
     [HttpPut]
     public async Task CreateContent([FromBody] ContentDTO content)
     {
-        await _contentManagmentService.UpdateContent( content ); 
+        await _contentManagmentService.UpdateContent(content);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{userId}/{contentId}")]
     public async Task DeleteContent(Guid userId, Guid contentId)
     {
         await _contentManagmentService.DeleteContent(userId, contentId);
@@ -45,6 +54,6 @@ public class ContentManagmentController : ControllerBase
     [HttpGet("generate-new-id")]
     public async Task<Guid> GenerateNewContentId(Guid userId)
     {
-        return await _contentManagmentService.GenerateNewContentId(userId); 
+        return await _contentManagmentService.GenerateNewContentId(userId);
     }
 }
